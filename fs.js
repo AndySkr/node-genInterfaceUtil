@@ -181,12 +181,34 @@ function readDir(src) {
 		console.log(...files)
 	})
 }
-readDir("./txt")
+// readDir("./txt")
+
+/**
+ * 重命名文件
+ * @param {旧文件名} oldPath 
+ * @param {新文件名} newPath 
+ * @param {回调} callback 
+ */
+function reSetName(oldPath, newPath, callback) {
+	fs.rename(oldPath, newPath, callback)
+}
+// reSetName('./text/newDir/test', './text/newDir/newName', function (err) {
+// 	if (err) throw err;
+// 	console.log("重命名成功")
+// })
 
 
-
-
-
+/**
+ * @param {路径} src
+ * 异步删除目录
+ */
+function removeMdir(src, callback) {
+	fs.rmdir(src, callback)
+}
+// removeMdir('./txt/newDir/b', function (err) {
+// 	if (err) throw err;
+// 	console.log("目录删除成功")
+// })
 
 
 
@@ -220,3 +242,4 @@ function unzipFile() {
 		.pipe(fs.createWriteStream("./text/newZip.txt"))
 }
 // unzipFile()
+
