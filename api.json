@@ -1,0 +1,482 @@
+{
+    "index": 1,
+    "name": "物流信息中心",
+    "desc": null,
+    "add_time": 1583301829,
+    "up_time": 1583301829,
+    "list": [
+        {
+            "query_path": {
+                "path": "/Logistics/Record/Import",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29662,
+            "method": "POST",
+            "catid": 6383,
+            "title": "导入物流记录",
+            "path": "/Logistics/Record/Import",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583323648,
+            "up_time": 1583323802,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2634",
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2633",
+                    "name": "X-iChangTou-Json-Api-Token",
+                    "example": "06e6556bf8eb462aa4f208520ae6ed59",
+                    "desc": "用户token"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2632",
+                    "name": "X-iChangTou-Json-Api-Signature-Timestamp",
+                    "example": "1562322392380",
+                    "desc": "时间戳"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2631",
+                    "name": "X-iChangTou-Json-Api-Nonce",
+                    "example": "4546456",
+                    "desc": "随机字符串"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2630",
+                    "name": "X-iChangTou-Json-Api-Signature",
+                    "example": "290e340d29b7e705ee0c14c6f7ce95e3fbb61f5b",
+                    "desc": "SHA1加密(token + 随机字符串 + 时间戳 )"
+                }
+            ],
+            "req_body_form": [
+                {
+                    "required": "1",
+                    "_id": "5e5f9a9a2806466128ac2635",
+                    "name": "file",
+                    "type": "file"
+                }
+            ],
+            "__v": 0,
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\r\n  \"code\": 2000,\r\n  \"data\": {\r\n      \"totalSize\":50,\r\n      \"successSize\":20,\r\n      \"fileUrl\":\"\"//回盘文件地址\r\n  },\r\n  \"message\": \"成功\"\r\n}",
+            "req_body_type": "form"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Record/Export",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29667,
+            "method": "POST",
+            "catid": 6383,
+            "title": "导出物流记录",
+            "path": "/Logistics/Record/Export",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583323865,
+            "up_time": 1583323886,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f9aee2806466128ac2636",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "req_body_other": "{\n  \"billCodes\": \"\", //快递单号\n  \"phone\": \"17602128635\", //手机号\n  \"addressee\": \"\", //收件人\n  \"startTime\": \"\", //开始时间\n  \"endTime\": \"\", //结束时间\n  \"pageSize\":10, //分页大小\n  \"pageIndex\": 10 //分页\n}",
+            "markdown": "",
+            "desc": "",
+            "res_body": "{}",
+            "req_body_type": "json"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Record/Add",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29607,
+            "method": "POST",
+            "catid": 6383,
+            "title": "新建物流记录",
+            "path": "/Logistics/Record/Add",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583317095,
+            "up_time": 1583317375,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f817f2806466128ac25c8",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f817f2806466128ac25c7",
+                    "name": "X-iChangTou-Json-Api-Token",
+                    "example": "06e6556bf8eb462aa4f208520ae6ed59",
+                    "desc": "用户token"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f817f2806466128ac25c6",
+                    "name": "X-iChangTou-Json-Api-Signature-Timestamp",
+                    "example": "1562322392380",
+                    "desc": "时间戳"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f817f2806466128ac25c5",
+                    "name": "X-iChangTou-Json-Api-Nonce",
+                    "example": "4546456",
+                    "desc": "随机字符串"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f817f2806466128ac25c4",
+                    "name": "X-iChangTou-Json-Api-Signature",
+                    "example": "290e340d29b7e705ee0c14c6f7ce95e3fbb61f5b",
+                    "desc": "SHA1加密(token + 随机字符串 + 时间戳 )"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\n   \"code\": 2000,\n   \"message\": \"成功\",\n   \"data\": {}\n}",
+            "req_body_type": "json",
+            "req_body_other": "{\n    \"billCodes\":\"123132132165\", // 票据单号，快递单号\n    \"addressee\":\"王二麻子\", // 收件人\n    \"phone\" : \"135798575545\", //手机号\n    \"address\" : \"广东省广州市白云区白云大道\", //收件地址\n    \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\n    \"remarks\" : \"补发\" //备注\n}"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Record/Import/History",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29672,
+            "method": "POST",
+            "catid": 6383,
+            "title": "查询物流导入记录",
+            "path": "/Logistics/Record/Import/History",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583323939,
+            "up_time": 1583997227,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e69e12b25fdf15c3bcee097",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "req_body_other": "{\n  \"pageSize\":10, //分页大小\n  \"pageNumber\": 10 //分页\n}",
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\r\n  \"code\": 2000,\r\n  \"data\": {\r\n    \"bodyList\": [ //二维数组\r\n        {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }, {\r\n            \r\n            \"operationName\" : \"sda\", //操作人\r\n            \"fileUrl\":\"123132132165\", // 回盘文件地址\r\n            \"successSize\" : 35, //成功条数\r\n            \"totalSize\" : 66, //总条数\r\n            \"uploadName\" : \"这是一个文件.excel\", //发布文件文件名\r\n            \"createTime\" : \"2016-09-21 08:50:08\" //发布时间\r\n        }],\r\n    \"currentPage\": 1,//当前页码\r\n    \"pageSize\": 10,//每页条数\r\n    \"totalSize\": 3//总条数\r\n  },\r\n  \"message\": \"成功\"\r\n}",
+            "req_body_type": "json"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Record/List",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29657,
+            "method": "POST",
+            "catid": 6383,
+            "title": "查询物流记录列表",
+            "path": "/Logistics/Record/List",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583323211,
+            "up_time": 1583997142,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e69e0d625fdf15c3bcee096",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e69e0d625fdf15c3bcee095",
+                    "name": "X-iChangTou-Json-Api-Token",
+                    "example": "06e6556bf8eb462aa4f208520ae6ed59",
+                    "desc": "用户token"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e69e0d625fdf15c3bcee094",
+                    "name": "X-iChangTou-Json-Api-Signature-Timestamp",
+                    "example": "1562322392380",
+                    "desc": "时间戳"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e69e0d625fdf15c3bcee093",
+                    "name": "X-iChangTou-Json-Api-Nonce",
+                    "example": "4546456",
+                    "desc": "随机字符串"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e69e0d625fdf15c3bcee092",
+                    "name": "X-iChangTou-Json-Api-Signature",
+                    "example": "290e340d29b7e705ee0c14c6f7ce95e3fbb61f5b",
+                    "desc": "SHA1加密(token + 随机字符串 + 时间戳 )"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "req_body_other": "{\n  \"billCodes\": \"\", //快递单号\n  \"phone\": \"17602128635\", //手机号\n  \"addressee\": \"\", //收件人\n  \"startTime\": \"\", //开始时间\n  \"endTime\": \"\", //结束时间\n  \"pageSize\":10, //分页大小\n  \"pageNumber\": 10 //分页\n}",
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\r\n  \"code\": 2000,\r\n  \"data\": {\r\n    \"bodyList\": [ //二维数组\r\n        {\r\n            \r\n            \"id\" : \"1\",\r\n            \"billCodes\":\"123132132165\", // 票据单号，快递单号\r\n            \"addressee\":\"王二麻子\", // 收件人\r\n            \"phone\" : \"135798575545\", //手机号\r\n            \"address\" : \"广东省广州市白云区白云大道\", //收件地址\r\n            \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\r\n            \"remarks\" : \"补发\", //备注\r\n            \"createTime\" : \"2019-10-25 22:22:22\" //导入时间\r\n        },{\r\n            \r\n            \"id\" : \"2\",\r\n            \"billCodes\":\"123132132165\", // 票据单号，快递单号\r\n            \"addressee\":\"王二麻子\", // 收件人\r\n            \"phone\" : \"135798575545\", //手机号\r\n            \"address\" : \"广东省广州市白云区白云大道\", //收件地址\r\n            \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\r\n            \"remarks\" : \"补发\", //备注\r\n            \"createTime\" : \"2019-10-25 22:22:22\" //导入时间\r\n        },{\r\n            \r\n            \"id\" : \"3\",\r\n            \"billCodes\":\"123132132165\", // 票据单号，快递单号\r\n            \"addressee\":\"王二麻子\", // 收件人\r\n            \"phone\" : \"135798575545\", //手机号\r\n            \"address\" : \"广东省广州市白云区白云大道\", //收件地址\r\n            \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\r\n            \"remarks\" : \"补发\", //备注\r\n            \"createTime\" : \"2019-10-25 22:22:22\" //导入时间\r\n        },{\r\n            \r\n            \"id\" : \"4\",\r\n            \"billCodes\":\"123132132165\", // 票据单号，快递单号\r\n            \"addressee\":\"王二麻子\", // 收件人\r\n            \"phone\" : \"135798575545\", //手机号\r\n            \"address\" : \"广东省广州市白云区白云大道\", //收件地址\r\n            \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\r\n            \"remarks\" : \"补发\", //备注\r\n            \"createTime\" : \"2019-10-25 22:22:22\" //导入时间\r\n        }],\r\n    \"currentPage\": 0,\r\n    \"pageSize\": 0,\r\n    \"totalSize\": 0\r\n  },\r\n  \"message\": \"成功\"\r\n}",
+            "req_body_type": "json"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Download/Template",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29592,
+            "method": "POST",
+            "catid": 6383,
+            "title": "物流下载导入模板",
+            "path": "/Logistics/Download/Template",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583302181,
+            "up_time": 1583303075,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f49a32806466128ac258d",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f49a32806466128ac258c",
+                    "name": "X-iChangTou-Json-Api-Token",
+                    "example": "06e6556bf8eb462aa4f208520ae6ed59",
+                    "desc": "用户token"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f49a32806466128ac258b",
+                    "name": "X-iChangTou-Json-Api-Signature-Timestamp",
+                    "example": "1562322392380",
+                    "desc": "时间戳"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f49a32806466128ac258a",
+                    "name": "X-iChangTou-Json-Api-Nonce",
+                    "example": "4546456",
+                    "desc": "随机字符串"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f49a32806466128ac2589",
+                    "name": "X-iChangTou-Json-Api-Signature",
+                    "example": "290e340d29b7e705ee0c14c6f7ce95e3fbb61f5b",
+                    "desc": "SHA1加密(token + 随机字符串 + 时间戳 )"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\n   \"code\": 2000,\n   \"message\": \"成功\",\n   \"data\": {\n      \"templateUrL\": \"模板.xlsl\"\n   }\n}",
+            "req_body_type": "form"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Info",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29677,
+            "method": "POST",
+            "catid": 6383,
+            "title": "物流信息信息查询",
+            "path": "/Logistics/Info",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583324135,
+            "up_time": 1583324208,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f9c302806466128ac2639",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "req_body_other": "{\n    \"billCodes\":\"12345674722\", //票据单号，快递单号\n    \"type\":\"申通快递\"\n}",
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\n    \"code\": 2000,\n    \"message\": \"成功\",\n    \"data\": {                \n        \"status\":\"已签收\", //当前状态\n        \"scanList\":[{      //物流变动列表\n            \"memo\":\"已签收，签收人凭取货码签收.\", //前端展示\n            \"scanType\":\"已签收\",                  //物流变动类型\n            \"scanDate\":\"2019-09-17 19:58:22\"      //物流变动时间\n        },{\n            \"memo\":\"快件已由上海玉兰香苑4期99号102店菜鸟驿站代收，请及时取件，如有疑问请联系1832193**09\",\n            \"scanType\":\"派送中\",\n            \"scanDate\":\"2019-09-16 09:43:21\"\n        },{      //物流变动列表\n            \"memo\":\"已签收，签收人凭取货码签收.\", //前端展示\n            \"scanType\":\"已签收\",                  //物流变动类型\n            \"scanDate\":\"2019-09-17 19:58:22\"      //物流变动时间\n        },{\n            \"memo\":\"快件已由上海玉兰香苑4期99号102店菜鸟驿站代收，请及时取件，如有疑问请联系1832193**09\",\n            \"scanType\":\"派送中\",\n            \"scanDate\":\"2019-09-16 09:43:21\"\n        },{      //物流变动列表\n            \"memo\":\"已签收，签收人凭取货码签收.\", //前端展示\n            \"scanType\":\"已签收\",                  //物流变动类型\n            \"scanDate\":\"2019-09-17 19:58:22\"      //物流变动时间\n        },{\n            \"memo\":\"快件已由上海玉兰香苑4期99号102店菜鸟驿站代收，请及时取件，如有疑问请联系1832193**09\",\n            \"scanType\":\"派送中\",\n            \"scanDate\":\"2019-09-16 09:43:21\"\n        }]\n    }\n}",
+            "req_body_type": "json"
+        },
+        {
+            "query_path": {
+                "path": "/Logistics/Record/Edit",
+                "params": []
+            },
+            "edit_uid": 0,
+            "status": "undone",
+            "type": "static",
+            "req_body_is_json_schema": false,
+            "res_body_is_json_schema": false,
+            "api_opened": false,
+            "index": 0,
+            "tag": [],
+            "_id": 29652,
+            "method": "POST",
+            "catid": 6383,
+            "title": "编辑物流记录",
+            "path": "/Logistics/Record/Edit",
+            "project_id": 395,
+            "req_params": [],
+            "res_body_type": "json",
+            "uid": 304,
+            "add_time": 1583322825,
+            "up_time": 1583323167,
+            "req_query": [],
+            "req_headers": [
+                {
+                    "required": "1",
+                    "_id": "5e5f981f2806466128ac2629",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f981f2806466128ac2628",
+                    "name": "X-iChangTou-Json-Api-Token",
+                    "example": "06e6556bf8eb462aa4f208520ae6ed59",
+                    "desc": "用户token"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f981f2806466128ac2627",
+                    "name": "X-iChangTou-Json-Api-Signature-Timestamp",
+                    "example": "1562322392380",
+                    "desc": "时间戳"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f981f2806466128ac2626",
+                    "name": "X-iChangTou-Json-Api-Nonce",
+                    "example": "4546456",
+                    "desc": "随机字符串"
+                },
+                {
+                    "required": "1",
+                    "_id": "5e5f981f2806466128ac2625",
+                    "name": "X-iChangTou-Json-Api-Signature",
+                    "example": "290e340d29b7e705ee0c14c6f7ce95e3fbb61f5b",
+                    "desc": "SHA1加密(token + 随机字符串 + 时间戳 )"
+                }
+            ],
+            "req_body_form": [],
+            "__v": 0,
+            "markdown": "",
+            "desc": "",
+            "res_body": "{\n   \"code\": 2000,\n   \"message\": \"成功\",\n   \"data\": {}\n}",
+            "req_body_type": "json",
+            "req_body_other": "{\n    \"id\" : \"1\",\n    \"billCodes\":\"123132132165\", // 票据单号，快递单号\n    \"addressee\":\"王二麻子\", // 收件人\n    \"phone\" : \"135798575545\", //手机号\n    \"address\" : \"广东省广州市白云区白云大道\", //收件地址\n    \"goodsName\" : \"菜刀\", //礼品、礼物、物品名称\n    \"remarks\" : \"补发\" //备注\n}"
+        }
+    ]
+}
